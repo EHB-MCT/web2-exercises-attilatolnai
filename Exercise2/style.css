@@ -1,0 +1,48 @@
+h1 {
+    color: darkblue;
+    font-size: 20pt;
+}
+
+h2 {
+    color: darkcyan;
+    font-size: 10pt;
+    margin-bottom: 15%;
+    padding: 2%;
+    border: darkcyan;
+    border-width: 2pt;
+    border: solid;
+    border-radius: 5pt;
+    text-align: center;
+}
+
+button {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    background-color: none;
+}
+
+p {
+    font-size: 10pt;
+}
+
+#types {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#blok {
+    width: 20%;
+    margin: 2%;
+    text-align: center;
+}
+
+#inhoud {
+    background-color: lightgray;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}

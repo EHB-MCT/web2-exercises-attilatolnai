@@ -1,8 +1,18 @@
 "use strict"
 
-// window.addEventListener('load', (event) => {
-//     console.log('page is fully loaded and ready to go');
-// });
+const dishes = [{
+    id: 1,
+    name: 'Cheeseburger',
+    price: 3
+},{
+    id: 2,
+    name: '9 Chicken nuggets',
+    price: 5
+},{
+    id: 3,
+    name: 'Large fries',
+    price: 4
+}]
 
 window.onload = function(){
     console.log("loaded");
