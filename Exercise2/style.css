@@ -1,48 +1,58 @@
-h1 {
+p {
     color: darkblue;
     font-size: 20pt;
-}
-
-h2 {
-    color: darkcyan;
-    font-size: 10pt;
-    margin-bottom: 15%;
-    padding: 2%;
-    border: darkcyan;
-    border-width: 2pt;
-    border: solid;
-    border-radius: 5pt;
-    text-align: center;
-}
-
-button {
-    margin-top: 5%;
-    margin-bottom: 10%;
-    background-color: none;
-}
-
-p {
     font-size: 10pt;
 }
 
-#types {
+h5 {
+    color: rgb(255, 255, 255);
+    background-color: black;
+    font-size: 15pt;
+    margin: 0;
+    padding: 5px;
+}
+
+#list {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-#blok {
-    width: 20%;
-    margin: 2%;
+#team {
+    display: flex;
+    flex-direction: row;
     text-align: center;
+    font-size: 22pt;
+    margin-left: 1%;
 }
 
-#inhoud {
-    background-color: lightgray;
+img {
+    background-color: white;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
     width: 100%;
+}
+
+.card {
+    background-color: white;
+    text-align: center;
+    width: 10rem;
+    margin: 3px;
+    border: solid black 5px;
+}
+.card-text{
+    font-size: 15px;
+    padding: 0;
+}
+.card-body{
+    background-color: lightgray;
+}
+.alert{
+    color: white;
+    background-color: red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 2%;
 }
