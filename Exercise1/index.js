@@ -22,29 +22,20 @@ window.onload = function(){
         
         let name = document.getElementById('name').value;
         let email = document.getElementById('email').value;
-        let order = document.getElementById('order').value;
+        let order = document.querySelector('input[name="dish"]:checked').value;
 
+        let dish = dishes.find( d => d.id == order);
 
         let orderdetails = {
-            name: this.name,
-            email: this.email,
-            order: this.order
+            name, email, dish
         }
 
-        function printOrder(){
+        document.getElementById('messages').innerHTML = printOrder(orderdetails);
+
+        function printOrder(orderdetails){
             console.log('printOrder');
-            document.getElementById('messages').innerHTML = `<p>The order for the customer ${name} is the following: ${order}. The customer may be notified by email: ${email}</p>`
+            return `<p>The order for the customer ${orderdetails.name} is the following: 
+            ${orderdetails.dish.name}. The customer may be notified by email: ${orderdetails.email}</p>`
         }
-
-        let dishes = [];
-        dishes.push({
-            id: '1',
-            name: 'Burger and french fries',
-            price: '18'
-        });
-        console.log(dishes);
-
-        printOrder(orderdetails);
-
     });
 }
