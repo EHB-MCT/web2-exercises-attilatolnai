@@ -29,6 +29,13 @@ function setupMap(center){
 
     const nav = new mapboxgl.NavigationControl();
     map.addControl(nav);
+
+    var directions = new MapboxDirections({
+        accessToken: mapboxgl.accessToken,
+        unit: 'metric'
+    });
+
+    map.addControl(directions, 'top-left');
 }
 
 // var map = new mapboxgl.Map({
