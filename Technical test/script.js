@@ -16,16 +16,19 @@ function successLocation(position){
 }
 
 function errorLocation(){
-    
+    setupMap([-2.24, 53.48])
 }
 
 function setupMap(center){
-    var map = new mapboxgl.Map({
+    const map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v11',
         center: center,
         zoom: 16
     });
+
+    const nav = new mapboxgl.NavigationControl();
+    map.addControl(nav);
 }
 
 // var map = new mapboxgl.Map({
